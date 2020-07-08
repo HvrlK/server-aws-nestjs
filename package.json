@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "tsc && node dist/src/main.js",
+    "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
@@ -21,12 +21,19 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@nestjs/cli": "^7.0.0",
+    "@nestjs/schematics": "^7.0.0",
     "@nestjs/common": "^7.0.0",
     "@nestjs/core": "^7.0.0",
+    "@types/node": "^13.9.1",
     "@nestjs/platform-express": "^7.0.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.5.4"
+    "rxjs": "^6.5.4",
+    "tsconfig-paths": "^3.9.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.4",
+    "@types/express": "^4.17.3"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",
